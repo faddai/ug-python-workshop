@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}My first website{% endblock %}
+
+{% block content %}
+    <h1>Welcome to my first website</h1>
+    <ul>
+    {% for number in range(1, 11) %}
+        <li>List item #{{ number }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

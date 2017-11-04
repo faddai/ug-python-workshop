@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Thank you{% endblock %}
+{% block content %}
+
+    <h1>Thank you for visiting our website, {{ data.get('name') }}.</h1>
+    <p>We will definitely reach out to you at <strong>{{ data.get('email') }}</strong></p>
+    <p>
+        <strong>To be sure, this is your message: </strong>
+        <em>{{ data.get('message') }}</em>
+    </p>
+    
+    <p>You can reach us anytime on Facebook and Twitter as PythonGhana</p>
+
+{% endblock %}
