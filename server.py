@@ -27,8 +27,8 @@ def contact_us():
 
         # save the information into a database
         # email information to yourself
-        
-        return render_template('thank_you.html', data=data)
+
+        return render_template('thank_you.html', **data)
 
     return render_template('contact.html')
 
